@@ -89,8 +89,9 @@ const Home = () => {
     }
 
     useEffect(() => {
-        downloadIndexes()
-        downloadStocks()
+        // downloadIndexes()
+        console.log(`Witam`)
+        // downloadStocks()
     }, [])
 
     return (
