@@ -1,0 +1,1 @@
+export const INDEXES = [`wig`, `wig20`, `wig30`, `wig40`, `wig80`];
