@@ -1,10 +1,6 @@
 @import '../../Styles/settings.scss';
 
 .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: column;
     padding: 30px;
 
     .index {
@@ -61,13 +57,19 @@
         }
 
     }
+
+    .stocksContainer {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
 }
 
-.stocks{
+.stocks {
     color: $color-light-grey;
     padding: 10px 10px 20px 10px;
     text-align: center;
-    width: 350px;
+    width: 710px;
     font-weight: 700;
 }
 
@@ -80,6 +82,26 @@
     color: $color-red-main;
     text-shadow: 0px 0px 2px $color-red-main;
 }
+
+
+@media all and (max-width:1200px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .stocksContainer {
+            width: 350px;
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+
+    .stocks {
+        width: 350px;
+    }
+}
+
 
 @keyframes show {
     0% {
